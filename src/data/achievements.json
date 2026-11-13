@@ -1,0 +1,53 @@
+[
+  {
+    "id": "api-latency",
+    "value": "95%",
+    "label": "API latency reduction",
+    "description": "Restructured SQL queries and targeted indexing on critical balance and reporting APIs.",
+    "context": "AKEO",
+    "icon": "gauge",
+    "highlight": true
+  },
+  {
+    "id": "manual-reporting",
+    "value": "98%",
+    "label": "Manual compliance work eliminated",
+    "description": "Automated compliance and operational reporting with scheduled background jobs.",
+    "context": "AKEO",
+    "icon": "bot",
+    "highlight": true
+  },
+  {
+    "id": "notifications",
+    "value": "300,000+",
+    "label": "Messages delivered in bulk",
+    "description": "RabbitMQ fan-out notification platform across SMS, email and push.",
+    "context": "Real-time Notification Engine",
+    "icon": "zap",
+    "highlight": true
+  },
+  {
+    "id": "pricing",
+    "value": "100+",
+    "label": "Daily pricing inconsistencies eliminated",
+    "description": "Distributed workflow with Bull queues and compensating transactions.",
+    "context": "AKEO",
+    "icon": "workflow"
+  },
+  {
+    "id": "tenant-isolation",
+    "value": "100%",
+    "label": "Multi-tenant data isolation",
+    "description": "Multi-tenant accounting module with branches, ledgers, journal entries and financial reporting.",
+    "context": "AKEO",
+    "icon": "lock"
+  },
+  {
+    "id": "complexity",
+    "value": "30%",
+    "label": "Less code complexity",
+    "description": "Migrated a legacy codebase to NestJS with minimal service disruption.",
+    "context": "AKEO",
+    "icon": "layers"
+  }
+]

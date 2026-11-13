@@ -1,0 +1,26 @@
+[
+  {
+    "id": "github",
+    "platform": "github",
+    "label": "GitHub",
+    "url": "https://github.com/ADITYASONI002",
+    "handle": "ADITYASONI002",
+    "showInHero": true
+  },
+  {
+    "id": "linkedin",
+    "platform": "linkedin",
+    "label": "LinkedIn",
+    "url": "https://www.linkedin.com/in/adityasoni02",
+    "handle": "adityasoni02",
+    "showInHero": true
+  },
+  {
+    "id": "email",
+    "platform": "email",
+    "label": "Email",
+    "url": "mailto:imadityasoni02@gmail.com",
+    "handle": "imadityasoni02@gmail.com",
+    "showInHero": true
+  }
+]

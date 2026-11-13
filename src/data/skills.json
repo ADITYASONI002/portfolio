@@ -1,0 +1,99 @@
+[
+  {
+    "id": "languages",
+    "name": "Languages",
+    "icon": "code",
+    "skills": [
+      {
+        "name": "TypeScript",
+        "core": true
+      },
+      {
+        "name": "JavaScript",
+        "core": true
+      }
+    ]
+  },
+  {
+    "id": "backend",
+    "name": "Backend",
+    "icon": "server",
+    "skills": [
+      {
+        "name": "Node.js",
+        "core": true
+      },
+      {
+        "name": "NestJS",
+        "core": true
+      },
+      "Express.js",
+      "REST APIs",
+      "gRPC"
+    ]
+  },
+  {
+    "id": "frontend",
+    "name": "Frontend",
+    "icon": "layout",
+    "skills": [
+      "Angular",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "id": "databases",
+    "name": "Databases",
+    "icon": "database",
+    "skills": [
+      {
+        "name": "PostgreSQL",
+        "core": true
+      },
+      "SQL"
+    ]
+  },
+  {
+    "id": "architecture",
+    "name": "Architecture",
+    "icon": "network",
+    "skills": [
+      "Microservices",
+      "Distributed Transactions",
+      "Multi-Tenancy",
+      "Monorepo",
+      "SOLID",
+      "OOP"
+    ]
+  },
+  {
+    "id": "messaging",
+    "name": "Messaging & Caching",
+    "icon": "zap",
+    "skills": [
+      {
+        "name": "RabbitMQ",
+        "core": true
+      },
+      "Bull (job queues)",
+      {
+        "name": "Redis (caching, rate limiting)",
+        "core": true
+      }
+    ]
+  },
+  {
+    "id": "devops",
+    "name": "Cloud & DevOps",
+    "icon": "cloud",
+    "skills": [
+      "AWS (EC2, S3)",
+      "Docker",
+      "Git",
+      "GitHub",
+      "SSH",
+      "Postman"
+    ]
+  }
+]

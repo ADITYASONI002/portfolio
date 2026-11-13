@@ -1,0 +1,39 @@
+[
+  {
+    "id": "akeo",
+    "company": "AKEO",
+    "role": "Software Engineer",
+    "startDate": "2023-09",
+    "endDate": null,
+    "location": "India",
+    "achievements": [
+      "Architected a distributed workflow using Bull queues and compensating transactions, eliminating 100+ daily pricing inconsistencies and ensuring fault-tolerant data consistency across services.",
+      "Delivered a multi-tenant accounting module supporting branches, ledgers, journal entries, and financial reporting with consistent transactional data and 100% isolation.",
+      "Engineered a configurable fee and invoicing service managing 1,000+ subscriptions, charges, and month-end billing cycles, integrated with regulatory compliance platforms.",
+      "Automated compliance and operational reporting via scheduled background jobs, eliminating 98% of manual monthly preparation.",
+      "Optimized critical balance and reporting APIs by restructuring SQL queries and applying targeted indexing — achieving 95% improvement in response performance.",
+      "Migrated a legacy codebase to a modern NestJS framework, reducing code complexity by 30% and improving developer productivity with minimal service disruption."
+    ],
+    "impact": [
+      {
+        "value": "95%",
+        "label": "faster balance & reporting APIs"
+      },
+      {
+        "value": "98%",
+        "label": "manual reporting eliminated"
+      },
+      {
+        "value": "100+",
+        "label": "daily pricing inconsistencies removed"
+      }
+    ],
+    "technologies": [
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Bull"
+    ]
+  }
+]

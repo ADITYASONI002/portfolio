@@ -1,0 +1,171 @@
+@import 'tailwindcss';
+@import './fonts.css';
+
+/* Dark mode is class-based so the user's choice can override the OS setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/* ------------------------------------------------------------------ */
+
+:root {
+  --bg: oklch(0.985 0.002 260);
+  --surface: oklch(1 0 0);
+  --surface-muted: oklch(0.966 0.003 260);
+  --border: oklch(0.912 0.004 260);
+  --border-strong: oklch(0.84 0.006 260);
+  --fg: oklch(0.205 0.012 260);
+  --fg-muted: oklch(0.44 0.013 260);
+  --fg-subtle: oklch(0.52 0.012 260);
+  --accent: oklch(0.5 0.16 256);
+  --accent-strong: oklch(0.44 0.16 256);
+  --accent-soft: oklch(0.955 0.025 256);
+  --accent-contrast: oklch(0.99 0 0);
+  --success: oklch(0.58 0.14 155);
+  --danger: oklch(0.54 0.19 27);
+  --grid-line: oklch(0.205 0.012 260 / 0.055);
+  --shadow-color: 220 15% 20%;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: oklch(0.155 0.006 260);
+  --surface: oklch(0.188 0.007 260);
+  --surface-muted: oklch(0.22 0.008 260);
+  --border: oklch(0.268 0.008 260);
+  --border-strong: oklch(0.34 0.01 260);
+  --fg: oklch(0.955 0.003 260);
+  --fg-muted: oklch(0.74 0.01 260);
+  --fg-subtle: oklch(0.66 0.01 260);
+  --accent: oklch(0.76 0.12 250);
+  --accent-strong: oklch(0.83 0.1 250);
+  --accent-soft: oklch(0.25 0.045 256);
+  --accent-contrast: oklch(0.16 0.02 260);
+  --success: oklch(0.74 0.15 155);
+  --danger: oklch(0.72 0.16 25);
+  --grid-line: oklch(0.955 0.003 260 / 0.045);
+  --shadow-color: 220 40% 2%;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+}
+
+@theme {
+  --font-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type scale: fluid display sizes, fixed body sizes. */
+  --text-display: clamp(2.5rem, 1.6rem + 3.6vw, 4.25rem);
+  --text-display--line-height: 1.04;
+  --text-display--letter-spacing: -0.035em;
+  --text-heading: clamp(1.75rem, 1.35rem + 1.6vw, 2.5rem);
+  --text-heading--line-height: 1.12;
+  --text-heading--letter-spacing: -0.025em;
+
+  --radius-card: 0.875rem;
+  --radius-control: 0.625rem;
+
+  --shadow-card: 0 1px 2px hsl(var(--shadow-color) / 0.06), 0 8px 24px -12px hsl(var(--shadow-color) / 0.12);
+  --shadow-lift: 0 2px 4px hsl(var(--shadow-color) / 0.06), 0 18px 40px -16px hsl(var(--shadow-color) / 0.22);
+
+  --breakpoint-xs: 25rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  /* Keep anchored sections clear of the sticky header. */
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--fg);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  dialog::backdrop {
+    background: oklch(0.1 0.01 260 / 0.55);
+    backdrop-filter: blur(4px);
+  }
+
+  summary {
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities                                                           */
+/* ------------------------------------------------------------------ */
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@utility mask-fade-radial {
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 30%, transparent 75%);
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

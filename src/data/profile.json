@@ -1,0 +1,47 @@
+{
+  "name": "Aditya Soni",
+  "initials": "AS",
+  "title": "Backend Engineer",
+  "headline": "I build fault-tolerant, high-throughput backend systems for fintech.",
+  "summary": "Node.js/NestJS microservices, distributed transactions and messaging architectures (RabbitMQ, Redis) that process hundreds of thousands of transactions and messages daily.",
+  "location": "Jaipur, India",
+  "email": "imadityasoni02@gmail.com",
+  "avatar": {
+    "src": "/images/avatar.webp",
+    "alt": "Portrait of Aditya Soni",
+    "width": 292,
+    "height": 292
+  },
+  "status": {
+    "label": "Software Engineer at AKEO"
+  },
+  "experience": {
+    "years": 3
+  },
+  "focusAreas": [
+    "Distributed systems",
+    "Fintech",
+    "Microservices"
+  ],
+  "coreStack": [
+    "Node.js",
+    "NestJS",
+    "TypeScript",
+    "PostgreSQL",
+    "RabbitMQ",
+    "Redis"
+  ],
+  "about": {
+    "paragraphs": [
+      "Backend engineer with 3+ years building fault-tolerant, high-throughput systems in fintech.",
+      "I specialise in Node.js/NestJS microservices, distributed transactions and messaging architectures (RabbitMQ, Redis) that process hundreds of thousands of transactions and messages daily. My track record includes a 95% API latency reduction, 100% isolation across multi-tenant financial data and a 98% reduction in manual compliance work."
+    ],
+    "specializations": [
+      "Microservices",
+      "Distributed transactions",
+      "Multi-tenancy",
+      "Messaging architectures (RabbitMQ, Redis)",
+      "Monorepo, SOLID & OOP"
+    ]
+  }
+}

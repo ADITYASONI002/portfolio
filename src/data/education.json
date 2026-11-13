@@ -1,0 +1,20 @@
+[
+  {
+    "id": "btech",
+    "institution": "AICE, Jaipur",
+    "degree": "B.Tech",
+    "field": "Computer Science & Engineering",
+    "startDate": "2020-09",
+    "endDate": "2024-04",
+    "grade": "CGPA: 8.54 / 10"
+  },
+  {
+    "id": "senior-secondary",
+    "institution": "Tagore Public School, Gudha Gorji",
+    "degree": "Senior Secondary",
+    "field": "PCM",
+    "startDate": "2018-06",
+    "endDate": "2019-04",
+    "grade": "76 / 100"
+  }
+]

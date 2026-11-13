@@ -1,0 +1,116 @@
+[
+  {
+    "id": "api-gateway",
+    "title": "Centralized API Gateway & Rate Limiting Service",
+    "summary": "A unified NestJS API gateway handling authentication, rate limiting, request validation and downstream routing.",
+    "categories": [
+      "Backend",
+      "APIs",
+      "Security"
+    ],
+    "featured": true,
+    "architecture": {
+      "components": [
+        {
+          "name": "Auth",
+          "description": "Dual-layer security: JWT + API-key authentication."
+        },
+        {
+          "name": "Rate limiter",
+          "description": "Per-IP and per-user limits via Redis sliding-window counters, with HTTP 429 throttling."
+        },
+        {
+          "name": "Validation",
+          "description": "Consolidated request validation, logging and health checks with fallback handling."
+        },
+        {
+          "name": "Routing",
+          "description": "Routes authorised requests to downstream internal services."
+        }
+      ]
+    },
+    "contributions": [
+      "Implemented a unified API gateway in NestJS handling authentication, rate limiting, request validation, and downstream routing — reducing cross-service redundancy by 60%.",
+      "Enforced dual-layer security (JWT + API-key) blocking 100% of unauthorized traffic before reaching internal services.",
+      "Applied per-IP and per-user rate limiting via Redis sliding-window counters with HTTP 429 throttling for abuse prevention.",
+      "Consolidated validation, logging, and health checks with fallback handling, improving overall service resilience by 50%."
+    ],
+    "technologies": [
+      "NestJS",
+      "JWT",
+      "Redis",
+      "API-Key Auth",
+      "Rate Limiting"
+    ],
+    "results": [
+      {
+        "value": "60%",
+        "label": "less cross-service redundancy"
+      },
+      {
+        "value": "100%",
+        "label": "unauthorized traffic blocked"
+      },
+      {
+        "value": "50%",
+        "label": "better service resilience"
+      }
+    ]
+  },
+  {
+    "id": "notification-engine",
+    "title": "Real-time Notification Engine",
+    "summary": "An event-driven, multi-channel notification platform delivering SMS, email and push messages through RabbitMQ.",
+    "categories": [
+      "Distributed Systems",
+      "Messaging",
+      "Backend"
+    ],
+    "featured": true,
+    "architecture": {
+      "components": [
+        {
+          "name": "Fan-out exchange",
+          "description": "RabbitMQ fan-out exchange distributing events to every channel."
+        },
+        {
+          "name": "Channel queues",
+          "description": "Isolated queues per channel type (SMS, email, push), plus dedicated priority queues for OTPs."
+        },
+        {
+          "name": "Dead-letter queue",
+          "description": "Exponential backoff retries under downstream failures."
+        },
+        {
+          "name": "SQL audit log",
+          "description": "Full delivery audit trail."
+        }
+      ]
+    },
+    "contributions": [
+      "Architected an event-driven multi-channel notification platform using RabbitMQ fan-out exchanges, guaranteeing bulk delivery of 300,000+ messages across SMS, email, and push channels with isolated queues per channel type.",
+      "Enforced end-to-end security for sensitive personal messages (OTPs) via encrypted payloads and dedicated priority queues — ensuring zero cross-tenant data leakage and 100% isolation between bulk and secure pipelines.",
+      "Implemented dead-letter queue handling with exponential backoff retry logic, achieving 98% delivery success rate under downstream failures with full SQL-backed delivery audit logs."
+    ],
+    "technologies": [
+      "Node.js",
+      "RabbitMQ",
+      "SQL",
+      "Caching"
+    ],
+    "results": [
+      {
+        "value": "300,000+",
+        "label": "messages delivered in bulk"
+      },
+      {
+        "value": "98%",
+        "label": "delivery success under failures"
+      },
+      {
+        "value": "0",
+        "label": "cross-tenant data leakage"
+      }
+    ]
+  }
+]

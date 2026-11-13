@@ -1,0 +1,74 @@
+{
+  "siteUrl": "https://aditya-soni-portfolio.com",
+  "title": "Aditya Soni — Backend Engineer | Node.js · NestJS · Distributed Systems",
+  "description": "Backend engineer with 3+ years building fault-tolerant, high-throughput fintech systems with Node.js/NestJS microservices, distributed transactions, RabbitMQ and Redis.",
+  "keywords": [
+    "Aditya Soni",
+    "Backend Engineer",
+    "Node.js Developer",
+    "NestJS",
+    "Distributed Systems",
+    "Microservices",
+    "RabbitMQ",
+    "Fintech"
+  ],
+  "locale": "en-IN",
+  "ogImage": {
+    "src": "",
+    "alt": "Aditya Soni — Backend Engineer"
+  },
+  "twitterHandle": "",
+  "themeColor": {
+    "light": "#fbfbfc",
+    "dark": "#0d0f12"
+  },
+  "defaultTheme": "system",
+  "resume": {
+    "path": "/resume/Aditya_Soni_Backend_Engineer.pdf",
+    "downloadName": "Aditya_Soni_Backend_Engineer.pdf",
+    "label": "Resume"
+  },
+  "contact": {
+    "formEndpoint": "https://formspree.io/f/xljbdopl",
+    "subjectPrefix": "[Portfolio]"
+  },
+  "sections": {
+    "about": {
+      "eyebrow": "About",
+      "title": "Engineering for correctness, then for scale.",
+      "description": "A short look at how I work and what I focus on."
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "title": "Where I have shipped production systems.",
+      "description": "Roles ordered by recency, with the outcomes I was accountable for."
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "title": "Technical toolkit.",
+      "description": "Grouped by domain. Highlighted items are my core stack."
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Selected engineering work.",
+      "description": "Problem, architecture and results for systems I designed or significantly contributed to."
+    },
+    "achievements": {
+      "eyebrow": "Impact",
+      "title": "Measured outcomes.",
+      "description": "Measurable results from systems I have built."
+    },
+    "education": {
+      "eyebrow": "Education",
+      "title": "Education & certifications."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your team's next system.",
+      "description": "The fastest way to reach me is email."
+    }
+  },
+  "footer": {
+    "tagline": "Backend Engineer · Node.js · NestJS · Distributed Systems"
+  }
+}
